@@ -1,4 +1,4 @@
-function PoincareSection(
+function PoincareMap(
     f!,
     bc!,
     g,
@@ -39,8 +39,6 @@ function PoincareSection(
     ξs = Array{U}(undef, dim, N)
     ξauxs = [Taylor1(0.0, 1) for _ in 1:dim, _ in 1:N]
     Hauxs = [Taylor1(0.0, 1) for _ in 1:N]
-    # ξauxs = [[Taylor1(t0, 1) for _ in 1:dim] for _ in 1:N]
-    # Hauxs = [Taylor1(t0, 1) for _ in 1:N]
 
     for i in 1:N
         for j in 1:dim
