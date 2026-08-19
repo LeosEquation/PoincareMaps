@@ -1,3 +1,8 @@
+name = "PoincareMaps"
+uuid = "c6ef78a6-5316-4197-8016-1fe903306c2f"
+authors = ["Leonel Mayorga López"]
+version = "0.1.0"
+
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 TaylorIntegration = "92b13dbe-c966-51a2-8445-caca9f8a7d42"
