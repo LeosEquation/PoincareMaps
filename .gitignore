@@ -1,0 +1,30 @@
+# Archivos típicos de outputs
+*.jld2
+*.csv
+*.txt
+*.log
+*.tex
+
+# Figuras
+*.pdf
+*.png
+*.jpg
+*.svg
+
+# =========================
+# 🧠 Entornos / editores
+# =========================
+.vscode/
+.ipynb_checkpoints/
+.tmp.driveupload/
+
+# =========================
+# 📓 Notebooks (opcional)
+# =========================
+notebooks/
+
+# =========================
+# 🗑️ Sistema
+# =========================
+.DS_Store
+Thumbs.db
