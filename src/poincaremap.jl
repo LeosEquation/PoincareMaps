@@ -1,3 +1,4 @@
+# src/poincaremap.jl
 function PoincareMap(
     f!,
     bc!,
@@ -22,7 +23,8 @@ function PoincareMap(
     dim = length(seed[1])
     N = length(seed)
 
-    progress = Threads.Atomic{Int}(0)
+    # progress = Threads.Atomic{Int}(0)
+    p = 0
     step = ceil(Int, N / 9)
 
     t0 = zero(U)
@@ -35,7 +37,7 @@ function PoincareMap(
     (ξ_min < ξ_max) || error("Valores máximo y mínimo no válidos.")
     (Δξ <= (ξ_max - ξ_min)) || error("Paso no válido")
 
-    caches = [TaylorIntegration.init_cache_ps(t0, ξ, maxevents, order, f!, params; parse_eqs) for _ in 1:N]
+    caches = [init_cache_ps(t0, ξ, maxevents, order, f!, params; parse_eqs) for _ in 1:N]
     ξs = Array{U}(undef, dim, N)
     ξauxs = [Taylor1(0.0, 1) for _ in 1:dim, _ in 1:N]
     Hauxs = [Taylor1(0.0, 1) for _ in 1:N]
@@ -132,7 +134,7 @@ function PoincareMap(
 
         end
 
-        p = Threads.atomic_add!(progress, 1)
+        p += 1 # Threads.atomic_add!(progress, 1)
 
         if p % step == 0
             print("█")
