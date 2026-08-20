@@ -33,7 +33,7 @@ The package currently builds on [`TaylorIntegration.jl`](https://github.com/Pere
 
 Consider an autonomous dynamical system:
 
-$$\dot{x} = f(x), \quad x \in \mathbb{R}^n$$
+\[ \dot{x} = f(x), \quad x \in \mathbb{R}^n \]
 
 A Poincaré section is defined through a scalar function:
 
