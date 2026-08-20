@@ -1,6 +1,6 @@
 # PoincareMaps.jl
 
-Numerical computation of **Poincaré maps** for dynamical systems using Taylor integration.
+Numerical computation of **Poincaré maps** for dynamical systems using TaylorIntegration.jl
 
 ---
 
