@@ -2,7 +2,7 @@
 
 julia_version = "1.12.4"
 manifest_format = "2.0"
-project_hash = "74c18aeb480fa7a8d9b829419a587cdc02b0863e"
+project_hash = "ef5469e6a74cbefced3d9b549607bfd6345cae73"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "5970c86505ae9c07bf5bc521ef2bbbb3849e8b7b"
@@ -474,9 +474,9 @@ version = "1.12.0"
 
 [[deps.LogExpFunctions]]
 deps = ["DocStringExtensions", "IrrationalConstants", "LinearAlgebra"]
-git-tree-sha1 = "13ca9e2586b89836fd20cccf56e57e2b9ae7f38f"
+git-tree-sha1 = "bba2d9aa057d8f126415de240573e86a8f39d2a1"
 uuid = "2ab3a3ac-af41-5b50-aa03-7779005ae688"
-version = "0.3.29"
+version = "1.0.1"
 
     [deps.LogExpFunctions.extensions]
     LogExpFunctionsChainRulesCoreExt = "ChainRulesCore"
@@ -530,9 +530,10 @@ uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
 version = "0.3.12"
 
 [[deps.MuladdMacro]]
-git-tree-sha1 = "cac9cc5499c25554cba55cd3c30543cff5ca4fab"
+deps = ["PrecompileTools"]
+git-tree-sha1 = "283bf85d4a767481dd924dff0eee1735e95f449e"
 uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
-version = "0.2.4"
+version = "0.2.7"
 
 [[deps.NonlinearSolveBase]]
 deps = ["ADTypes", "Adapt", "ArrayInterface", "CommonSolve", "Compat", "ConcreteStructs", "DifferentiationInterface", "EnzymeCore", "FastClosures", "FunctionWrappers", "FunctionWrappersWrappers", "LinearAlgebra", "LogExpFunctions", "Markdown", "MaybeInplace", "PreallocationTools", "PrecompileTools", "Preferences", "Printf", "RecursiveArrayTools", "SciMLBase", "SciMLJacobianOperators", "SciMLLogging", "SciMLOperators", "SciMLStructures", "Setfield", "StaticArraysCore", "SymbolicIndexingInterface", "TimerOutputs"]
@@ -581,6 +582,12 @@ deps = ["OrderedCollections", "UnPack"]
 git-tree-sha1 = "34c0e9ad262e5f7fc75b10a9952ca7692cfc5fbe"
 uuid = "d96e819e-fc66-5662-9728-84c9c7592b0a"
 version = "0.12.3"
+
+[[deps.PoincareMaps]]
+deps = ["LinearAlgebra", "TaylorIntegration", "TaylorSeries"]
+path = "."
+uuid = "c6ef78a6-5316-4197-8016-1fe903306c2f"
+version = "0.1.0"
 
 [[deps.Polyester]]
 deps = ["ArrayInterface", "BitTwiddlingConvenienceFunctions", "CPUSummary", "IfElse", "ManualMemory", "PolyesterWeave", "Static", "StaticArrayInterface", "StrideArraysCore", "ThreadingUtilities"]
@@ -890,9 +897,7 @@ version = "1.0.3"
 
 [[deps.TaylorIntegration]]
 deps = ["DiffEqBase", "Espresso", "InteractiveUtils", "LinearAlgebra", "Markdown", "Parameters", "RecursiveArrayTools", "Reexport", "StaticArrays", "TaylorSeries"]
-git-tree-sha1 = "e15b281d6e789b5b427c8a3815977bf66375f6fb"
-repo-rev = "main"
-repo-url = "https://github.com/LeosEquation/TaylorIntegration.jl"
+git-tree-sha1 = "38ed42dcf490c97a9b5f881cf0fc5fc67ca7e53a"
 uuid = "92b13dbe-c966-51a2-8445-caca9f8a7d42"
 version = "0.18.3"
 
